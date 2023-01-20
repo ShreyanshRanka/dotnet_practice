@@ -1,0 +1,22 @@
+@model LMSMVC.Models.Training;
+@{
+    ViewData["Title"] = "Update Page";
+}
+<form class="form-group" method="post" asp-action="create">
+    <label asp-for="Id"></label>
+    <input type="hidden" class="form-control" asp-for="Id" />
+   
+    <label asp-for="Topic"></label>
+    <input class="form-control" asp-for="Topic" />
+
+    <label asp-for="Descriptions"></label>
+    <input class="form-control" asp-for="Descriptions" />
+
+    <label asp-for="Faculty"></label>
+    <input class="form-control" asp-for="Faculty" />
+  
+    <label asp-for="Location"></label>
+    <input class="form-control" asp-for="Location" />
+
+    <input class="btn btn-info btn-sm" type="submit" value="submit">
+</form>

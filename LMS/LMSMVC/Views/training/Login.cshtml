@@ -1,0 +1,15 @@
+@model LMSMVC.Models.User;
+@{
+    ViewData["Title"] = "Register Page";
+}
+<form class="form-group" method="post" asp-action="login">
+
+    <label asp-for="Email"></label>
+    <input class="form-control" asp-for="Email" />
+
+    <label asp-for="Password"></label>
+    <input class="form-control" asp-for="Email" />
+    <br>
+    <button class="btn btn-primary btn-sm" type="submit">Login</button>&nbsp;&nbsp;
+    <button class="btn btn-info btn-sm" ><a asp-action="Register"></a>Register</button>
+</form>
